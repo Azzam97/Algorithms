@@ -60,6 +60,6 @@ function arrConcat(arr1, arr2){
         newArr[j] = arr2[k]
         j++
     }
-    return temp
+    return newArr
 }
 console.log(arrConcat([1,2],[55,57]))
