@@ -22,15 +22,14 @@ class LinkedList{
         return this;
     }
 
-    contains(val){
+    length(){
         let current = this.head;
+        var length = 0;
         while(current != null){
-            if (current.data == val){
-                return true;
-            }
             current = current.next;
+            length++;
         }
-        return false;
+        return length;
     }
 }
 
@@ -41,4 +40,4 @@ list.addfront(40);
 list.addfront(80);
 list.addfront(90);
 list.addfront(60);
-console.log(list.contains(1000));
+console.log(list.length());
