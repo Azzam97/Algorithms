@@ -31,20 +31,18 @@ class SLL{
     }
 
     removefront(){
-        let previous = this.head;
-        let current = previous.next;
-        previous = null;
+        let current = this.head.next;
+        this.head = null;
         this.head = current;
         return this;
     }
 
-    front(){
-        let current = this.head;
-        if (current != null){
-            console.log(current.data)
+    front(){;
+        if (this.head != null){
+            console.log(this.head.data)
         }
         else{
-            console.log(current);
+            console.log(this.head);
         }
     }
 }
